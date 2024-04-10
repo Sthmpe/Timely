@@ -3,6 +3,21 @@ import { Sheet, SheetContent, SheetDescription, SheetTitle, SheetTrigger } from 
 import { Separator } from "./ui/separator";
 import { Button } from "./ui/button";
 
+/**
+ * MobileNav Component
+ * 
+ * This component represents the mobile navigation menu of the website. 
+ * It typically includes a trigger button to open the navigation menu, a title, and navigation options.
+ * 
+ * Components Used:
+ * - Menu: Icon component from Lucide React for the navigation menu trigger.
+ * - Sheet, SheetContent, SheetDescription, SheetTitle, SheetTrigger: Custom UI components for a sliding sheet navigation menu.
+ * - Separator: Custom UI component for a visual separator.
+ * - Button: Custom UI component for clickable elements.
+ * 
+ * @returns {JSX.Element} MobileNav component JSX
+ */
+
 const MobileNav = () => {
   return(
 	<Sheet>

@@ -1,6 +1,20 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 
+/**
+ * Layout Component
+ * 
+ * This component represents the layout structure of the website. 
+ * It includes a header, hero section, and a container for the main content.
+ * 
+ * Components Used:
+ * - Header: Component for the website header.
+ * - Hero: Component for the hero section of the website.
+ * 
+ * @param {Props} props - Props containing children (main content) to be rendered within the layout.
+ * @returns {JSX.Element} Layout component JSX
+ */
+
 type Props = {
   children: React.ReactNode;
 };

@@ -1,5 +1,13 @@
 import hero from "../assets/hero.png";
 
+/**
+ * Hero Component
+ * 
+ * This component represents the hero section of the website. It displays an image as the hero background.
+ * 
+ * @returns {JSX.Element} Hero component JSX
+ */
+
 const Hero = () => {
   return(
 	<div>
