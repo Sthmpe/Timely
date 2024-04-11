@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import Layout from "./layouts/layout";
-import Hompage from "./pages/Hompage";
+import Homepage from "./pages/Homepage";
 
 /**
  * AppRoutes Component
@@ -22,7 +22,7 @@ const AppRoutes = () => {
 		<Routes>
 			<Route path="/" element={
 				<Layout>
-					<Hompage />
+					<Homepage />
 				</Layout>} />
 			<Route path="/user_profile" element={<span>USER PROFILE PAGE</span>} />
 			<Route path="*" element={<Navigate to="/" />} />

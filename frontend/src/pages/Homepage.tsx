@@ -1,5 +1,6 @@
 import landingImage from "../assets/landing.png";
 import appDownloadImage from "../assets/appDownload.png";
+
 /**
  * Homepage Component
  * 
@@ -9,7 +10,7 @@ import appDownloadImage from "../assets/appDownload.png";
  * @returns {JSX.Element} Homepage component JSX
  */
 
-const Hompage = () => {
+const Homepage = () => {
   return(
 	<div className="felx flex-col gap-12">
 		<div className="bg-white rounded-lg shadow-md py-8 flex flex-col gap-5 text-center -mt-16">
@@ -34,4 +35,4 @@ const Hompage = () => {
   );
 };
 
-export default Hompage;
+export default Homepage;
