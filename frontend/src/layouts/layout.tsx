@@ -6,11 +6,12 @@ import Hero from "@/components/Hero";
  * Layout Component
  * 
  * This component represents the layout structure of the website. 
- * It includes a header, hero section, and a container for the main content.
+ * It includes a header, hero section, main content area, and footer.
  * 
  * Components Used:
  * - Header: Component for the website header.
  * - Hero: Component for the hero section of the website.
+ * - Footer: Component for the website footer.
  * 
  * @param {Props} props - Props containing children (main content) to be rendered within the layout.
  * @returns {JSX.Element} Layout component JSX

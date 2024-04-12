@@ -1,3 +1,12 @@
+/**
+ * Footer Component
+ * 
+ * This component represents the footer section of the website.
+ * It contains the name/logo of the website and links to "About Us", "Privacy Policy", and "Terms of Service".
+ * The links are arranged horizontally on larger screens and vertically on smaller screens.
+ * 
+ * @returns {JSX.Element} Footer component JSX
+ */
 const Footer = () => {
   return(
 	<div className="bg-orange-500 py-10">
@@ -5,7 +14,7 @@ const Footer = () => {
 			<span className="text-3xl text-white font-bold tracking-tight">
 				TimeLY.com
 			</span>
-			<span className="text-white font-bold tracking-tight flex gap-4">
+			<span className="text-white font-bold tracking-tighter flex gap-4">
 				<span>About Us</span>
 				<span>Privacy Policy</span>
 				<span>Terms Of Service</span>
