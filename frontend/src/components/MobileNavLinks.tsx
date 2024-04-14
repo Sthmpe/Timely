@@ -2,6 +2,20 @@ import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import { useAuth0 } from "@auth0/auth0-react";
 
+/**
+ * MobileNavLinks Component
+ * 
+ * This component renders navigation links for the mobile navigation menu.
+ * It typically includes links to user profile and logout functionality.
+ * 
+ * Components Used:
+ * - Link: From react-router-dom for navigation functionality.
+ * - Button: Custom UI component for clickable elements.
+ * - useAuth0: Hook from Auth0 React SDK for authentication.
+ * 
+ * @returns {JSX.Element} MobileNavLinks component JSX
+ */
+
 const MobileNavLinks = () => {
 	const { logout } = useAuth0();
 

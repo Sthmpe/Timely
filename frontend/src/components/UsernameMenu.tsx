@@ -12,8 +12,11 @@ import { Button } from "./ui/button";
  * 
  * Libraries/Components Used:
  * - lucide-react: Library for SVG icons.
+ * - DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger: Custom UI components for dropdown menu functionality.
  * - useAuth0: Hook from Auth0 React SDK for authentication.
  * - react-router-dom: Library for routing in React applications.
+ * - Separator: Custom UI component for a visual separator.
+ * - Button: Custom UI component for clickable elements.
  * 
  * @returns {JSX.Element} UsernameMenu component JSX
  */
