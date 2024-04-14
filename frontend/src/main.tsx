@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./global.css";
 import { BrowserRouter as Router } from "react-router-dom";
 import AppRoutes from "./AppRoutes";
+import Auth0ProviderWithNavigate from "./auth/Auth0ProviderWithNavigate";
 
 /**
  * Entry Point
@@ -18,12 +19,15 @@ import AppRoutes from "./AppRoutes";
  * Components Used:
  * - Router: Component for providing routing functionality to the application.
  * - AppRoutes: Component defining the routes of the application.
+ * - Auth0ProviderWithNavigate: Component for providing authentication functionality with navigation.
  */
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <Router>
-      <AppRoutes />
+      <Auth0ProviderWithNavigate>
+        <AppRoutes />
+      </Auth0ProviderWithNavigate>
     </Router>
   </React.StrictMode>,
 );
