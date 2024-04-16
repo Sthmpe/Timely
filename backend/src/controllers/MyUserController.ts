@@ -1,6 +1,13 @@
 import { Request, Response } from "express";
 import User from "../models/user";
 
+/**
+ * Handles the creation of a new user.
+ * 
+ * @param {Request} req - The request object.
+ * @param {Response} res - The response object.
+ */
+
 const createCurrentUser = async (req: Request, res: Response) => {
 	try {
 		const { auth0Id } = req.body;

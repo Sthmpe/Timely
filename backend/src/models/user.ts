@@ -7,10 +7,11 @@ import mongoose from "mongoose";
  * 
  * Schema Fields:
  * - auth0Id: String, required field for Auth0 user ID.
- * - email: String, required field for user email.
- * - name: String, required field for user name.
- * - hostel: String, required field for user's hostel.
- * - PhoneNumber: Number, required field for user's phone number.
+ * - email: String, field for user email.
+ * - name: String,  field for user name.
+ * - hostel: String, field for user's hostel.
+ * - office: String, field for user's office.
+ * - PhoneNumber: Number, field for user's phone number.
  * 
  * Dependencies:
  * - mongoose: Library for MongoDB object modeling designed to work in an asynchronous environment.
@@ -29,15 +30,15 @@ const userSchema = new mongoose.Schema({
 	},
 	name: {
 		type: String,
-		require: true,
+	},
+	office: {
+		type: String,
 	},
 	hostel: {
 		type: String,
-		require: true,
 	},
 	PhoneNumber: {
 		type: Number,
-		require: true,
 	},
 });
 

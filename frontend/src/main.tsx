@@ -4,6 +4,7 @@ import "./global.css";
 import { BrowserRouter as Router } from "react-router-dom";
 import AppRoutes from "./AppRoutes";
 import Auth0ProviderWithNavigate from "./auth/Auth0ProviderWithNavigate";
+import { QueryClient, QueryClientProvider } from "react-query";
 
 /**
  * Entry Point
@@ -22,12 +23,22 @@ import Auth0ProviderWithNavigate from "./auth/Auth0ProviderWithNavigate";
  * - Auth0ProviderWithNavigate: Component for providing authentication functionality with navigation.
  */
 
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+    },
+  },
+});
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <Router>
-      <Auth0ProviderWithNavigate>
-        <AppRoutes />
-      </Auth0ProviderWithNavigate>
+      <QueryClientProvider client={queryClient}>
+        <Auth0ProviderWithNavigate>
+          <AppRoutes />
+        </Auth0ProviderWithNavigate>
+      </QueryClientProvider>
     </Router>
   </React.StrictMode>,
 );
